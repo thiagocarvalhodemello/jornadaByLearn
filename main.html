@@ -1,0 +1,665 @@
+# variavel
+Um nome que se refere a um valor
+
+#Atribuição
+Atribuição é passar um valor para a variavel.
+Famemos isso através do simbolo de igual(=)
+
+
+
+#Motivo do Uso
+São usados para guardar valores e reutilizar mais tarde.
+os valores podem ser alterados com o tempo
+
+#Sintaxe
+variavel = valor
+variavel = novo_valor
+variavel = variavel1
+
+Idade = 24
+nome_completo = 'Thiago carvalho'
+
+idade
+
+nome_completo
+
+ano = 2021
+
+ano = 2022
+idade = 25
+
+idade
+
+numero = 10
+numero_favorito = numero
+numero_favorito
+
+# Não pode sar espaços em variaveis
+numero_favorito
+
+nome_completo = 'Thiago carvalho de mello'
+
+idade = 24
+nome = 'Thiago'
+
+
+
+#Tipos de Dados
+
+Basicamente um tipo de dado define o que é aquela variavel:
+
+* Números:
+ - Inteiros **=> int**
+ - Decimal (com virgula) **=> float**
+ - texto **=>str**
+ - Boleano (veradeiro ou falso) **=>bool**
+
+
+
+
+inteiro = 10
+decima = 10.5
+
+texto = 'thiago carvalho'
+booleano = False
+
+type(inteiro)
+
+type(decima)
+
+type(texto)
+
+type(booleano)
+
+23+10
+
+'23+10'
+
+'23' + '10'
+
+'23' + 23
+
+23 + '23'
+
+letra = 'f'
+
+type(letra)
+
+
+
+# Conversão de Tipos
+
+Inteiros **=> int**
+Decimal (com virgula) **=> float**
+texto **=>str**
+Boleano (veradeiro ou falso) **=>bool**
+
+
+ano = 2021
+idade = '35'
+
+type(idade)
+
+idade = int(idade)
+
+type(idade)
+
+ano = str(ano)
+
+type(ano)
+
+peso = 66
+
+type(peso)
+
+peso = float(peso)
+
+type(peso)
+
+texto_10 = '10'
+numero_20 = 20
+
+numero_10 = int(texto_10)
+texto_20 = str(numero_20)
+
+type(numero_20)
+
+type(texto_20)
+
+type(10.5)
+
+
+
+# Operações Matematicas
+Podemos executar varias operações matematicas, como por exemplo:
+
+
+
+*   Soma => +
+*   Subtração => -
+*   Divisão => /
+*   Multipkicação => *
+
+
+
+
+soma = 20 + 20
+
+soma
+
+subtração = 40 - 20
+
+subtração
+
+divisao = 10 / 2
+
+divisao
+
+multiplicacao = 2 * 5
+
+multiplicacao
+
+type(divisao)
+
+ int(divisao)
+
+divisao = 10 / 0
+
+
+
+# Metodos de Entrada
+Sã formas de enviar dados para o python, ou seja nós usuarios entramos com dados para ser processado pelo programa em python
+ex: perguntar o nome da pessoa
+
+nome = input('Qual a sua nome?')
+
+nome
+
+idade= input('Qual sua idade?')
+
+idade
+
+idade= int(idade)
+
+idade
+
+idade = int(input('Qual sua idade verdadeira: '))
+
+idade
+
+idade = str(idade)
+
+idade= int(idade)
+
+idade = idade + 1
+
+idade
+
+type(input)
+
+resto_da_divisao = int(10/3)
+
+resto_da_divisao
+
+modulo_divisao = 10%3
+
+modulo_divisao
+
+resto_da_divisao = 10 / 3
+
+resto_da_divisao
+
+resto_da_divisao = 10 // 3
+
+
+
+resto_da_divisao
+
+# Calculadora da ByLearn
+
+#Entrada dos números
+primeiro_numero = float(input('Digite o primeiro número: '))
+segundo_numero = float(input('Digite o segundo número: '))
+
+#Operações Matematicas
+soma = primeiro_numero + segundo_numero
+subtracao = primeiro_numero - segundo_numero
+multiplicacao = primeiro_numero * segundo_numero
+divisao = primeiro_numero / segundo_numero
+
+
+soma
+
+subtracao
+
+multiplicacao
+
+divisao
+
+
+
+# Métodos de Saida
+são formas do python mostrar os dados do usuarios
+usamos a função print() e enviamos a mensagem/variavel que queremos mostrar ao usuario
+
+print('O resultado é: ')
+
+print(divisao)
+
+print('O resultado é: ',divisao)
+
+print('O resultado é:',multiplicacao)
+
+# Calculadora da ByLearn
+
+#Entrada dos números
+primeiro_numero = float(input('Digite o primeiro número: '))
+segundo_numero = float(input('Digite o segundo número: '))
+
+#Operações Matematicas
+soma = primeiro_numero + segundo_numero
+subtracao = primeiro_numero - segundo_numero
+multiplicacao = primeiro_numero * segundo_numero
+divisao = primeiro_numero / segundo_numero
+
+#saida dos Cálculos
+print('A soma é:',soma)
+print('A subtracao é:',subtracao)
+print('A multiplicacao é:',multiplicacao)
+print('A divisao é:',divisao)
+
+# A soma entre (25) e (5) é (30)
+print('A soma entre', primeiro_numero, 'e', segundo_numero, 'é', soma)
+
+print(f'A soma entre {primeiro_numero} e {segundo_numero} é {soma}!')
+
+# Calculadora da ByLearn
+
+#Entrada dos números
+primeiro_numero = float(input('Digite o primeiro número: '))
+segundo_numero = float(input('Digite o segundo número: '))
+
+#Operações Matematicas
+soma = primeiro_numero + segundo_numero
+subtracao = primeiro_numero - segundo_numero
+multiplicacao = primeiro_numero * segundo_numero
+divisao = primeiro_numero / segundo_numero
+
+#saida dos Cálculos
+print(f'A soma entre {primeiro_numero} e {segundo_numero} é {soma}!')
+print(f'A subtração entre {primeiro_numero} e {segundo_numero} é {subtracao}!')
+print(f'A multiplicação entre {primeiro_numero} e {segundo_numero} é {multiplicacao}!')
+print(f'A divisão entre {primeiro_numero} e {segundo_numero} é {divisao}!')
+
+# {} => Dicionário e F-strings
+# [] => Listas
+# () => Funções e Tuplas
+
+# Listas (Arrey)
+Métodos de trabalhar com sequências
+
+
+animais = ['cachorro', 'gato', 'coelho','furão','hamster']
+# Posição:     1          2        3        4       5
+# Indices:     0          1        2        3       4
+
+animais[1]
+
+animais[2]
+
+animais[3]
+
+print('A Shura é uma', animais[3])
+print('O obi-wan é um',animais[1])
+print('O Dwight é um',animais[4])
+
+dwight = animais[4]
+obiwan = animais[1]
+shura = animais[3]
+
+print('A Shura é uma', shura)
+print('O obi-wan é um',obiwan)
+print('O Dwight é um',dwight)
+
+ numeros = [1, 3, 5, 7, 9]
+ cinco = numeros[2]
+ nove = numeros[4]
+
+
+cinco
+
+lista_de_lista = [ ['Doctor', 2], ['Thiago', 4], ['shura', 6] ]
+primeira_sublista = lista_de_lista[0]
+
+primeira_sublista
+
+primeiro_dado = primeira_sublista[0]
+
+primeiro_dado
+
+ segundo_dado = lista_de_lista[0][1]
+
+segundo_dado
+
+lista_vazia = []
+
+lista_vazia.append('Thiago')
+
+lista_vazia.append(35)
+
+lista_vazia.append(1)
+
+lista_vazia.append('Desempregado')
+
+lista_vazia
+
+print(f'O {lista_vazia[0]} tem {lista_vazia[1]} anos, possui {lista_vazia[2]} gatos e está {lista_vazia[3]}')
+
+# Condicionais
+
+Principal forma de atrubuir uma lógica ao nosso código.
+só executa codigos que correspondem a condição especificada.
+ex:
+* Se estiver quente
+ - vamos tomar sorvete de flocos
+ - vamos para a praia
+
+* se estiver frio
+ - comer chocolate
+ - vamos ao cinema
+
+Condições:
+ * igual ==  
+ * Menor < 
+ * Maior >
+ * Menor igual <= 
+ * Maior igual >=
+ * Menor igual !=
+
+temperatura = 'fria'
+
+if temperatura ==  'quente':
+  print('vamos tomar sorvete de flocos')
+  print('vamos para a praia')
+else:
+  print('comer chocolate')
+  print('vamos ao cinema')
+
+# 1, 3, 5
+
+numero = 5
+
+if numero == 1:
+  print('Você ganhou')
+elif numero == 3:
+  print('Você ganhou')
+elif numero == 5:
+  print('Você ganhou')
+else:
+  print('Você perdeu')
+
+
+numero = 20
+
+if numero <= 20:
+  print('É um número pequeno')
+else:
+  print('É um número grande')
+
+nome = 'Thiago'
+
+if nome != 'Thiago':
+  print('cade o thiago?')
+else:
+  print('É o Thiago!')
+
+nome = 'Thiago'
+sobrenome = 'Carvalho'
+
+if nome == 'Thiago':
+  if sobrenome == 'Carvalho':
+    print('É o Thiago Carvalho')
+else:
+  print('Não é o Thiago')
+
+# 1, 3, 5, 7, 9
+
+numero = 7
+
+if numero == 1:
+  print('Você ganhou')
+elif numero == 3:
+  print('Você ganhou')
+elif numero == 5:
+  print('Você ganhou')
+elif numero == 7:
+  print('Você ganhou')
+elif numero == 9:
+  print('Você ganhou')
+else:
+  print('Você perdeu')
+
+nome = 'Thiago'
+sobrenome = 'Carvalho'
+idade = 35
+
+if nome == 'Thiago':
+  if sobrenome == 'Carvalho':
+    if idade == 35:
+      print('É o Thiago Carvalho 35 anos')
+    else:
+      print('É outro Thiago Carvalho com idade diferente')
+  else:
+    print('é outro thiago carvalho')
+else:
+  print('Não é o Thiago')
+
+
+
+# Operadores Lógicos
+
+Servem para juntar duas ou mais condições
+
+Uma condição E (**and**) outra condição
+* Todas devem ser verdadeiras
+
+Uma condição OU (**or**) outra condição
+* Ao menos um
+
+
+# 1, 3, 5
+
+numero = 8
+
+if numero == 1 or numero == 3 or numero == 5 or numero == 7 or numero == 9:
+  print('Você Ganhou!')
+else:
+  print('Você perdeu!')
+
+nome = 'Thiago'
+sobrenome = 'Carvalho'
+idade = 35
+
+if nome == 'Thiago' and sobrenome == 'Carvalho' and idade == 35:
+  print('É o Thiago Carvalho de Mello verdadeiro')
+else:
+  print('não é o thiago verdadeiro')
+
+# 1, 3, 5
+# nome
+
+nome = 'thiago'
+numero = 5
+
+# true and (true) = true   //   true and (false) = false  
+if nome == 'thiago' and (numero == 1 or numero == 3 or numero == 5):
+  print('O thiago escolheu o numero certo!')
+else:
+  print('Errou!')
+
+numero_aceitos = [1, 3, 5, 7, 9]
+
+numero = 6
+
+if numero in numero_aceitos:
+  print('Você acertou!')
+else:
+  print('Você erro!')
+
+nome = 'Thiago'
+sobrenome = 'Carvalho'
+idade = 35
+
+if nome.lower() == 'thiago' and sobrenome.lower == 'carvalho' and idade == 35:
+  print('É o Thiago Carvalho de Mello verdadeiro')
+else:
+  print('não é o thiago verdadeiro')  
+
+# Laços de repetição
+forma de evitar a repetição de código, executando uma ação repetidamente
+
+print(0)
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+print(6)
+print(7)
+print(9)
+
+# for variavel in lista/sequencia
+
+for numero in range(10):
+  print(numero)
+
+
+# for variavel in sequencia
+
+# PARA CADA variavel Na MINHA sequencia:
+    # executar um repetição (codigo) => Iteração
+
+# PARA CADA número Na MINHA sequencia de números até 10
+    #  Mostrar o numero
+
+for numero in range(10):
+  print('O numero é:', numero)
+
+# 3 - [8]
+
+for numero in range(3,9):
+  print(numero)
+
+for numero in range(3, 16, 2):
+  print(numero)
+
+resto_divisao = 9 % 4
+
+resto_divisao
+
+for numero in range(1,11):
+  if numero % 2 == 0:
+    print(f'O número {numero} é par!')
+  else:
+    print(f'o número {numero} é impar!')
+
+notas = [ 10, 8, 9, 7, 5 ]
+soma = 0
+
+for nota in notas:
+  soma += nota
+
+print('A soma das notas é', soma)
+
+media =  soma / 5
+
+print('A média das notas é', media)
+
+
+notas = [ 4, 8, 9, 5]
+
+soma = 0
+
+for nota in notas:
+  soma += nota
+
+print('A soma das notas é', soma)
+
+media =  soma / len(notas)
+
+print('A média das notas é', media)
+
+notas = [ 10, 8, 9]
+
+quantidade = len(notas)
+soma = sum(notas)
+media =  soma / quantidade
+
+print('A média das notas é', media)
+
+def calculara_media(notas):
+  quantidade = len(notas)
+  soma = sum(notas)
+  media =  soma / quantidade
+  print('O aluno tirou', media)
+  return 
+
+def verificar_aprovacao(media):
+  if media >= 6:
+    print('Aluno Aprovado :)')
+  else:
+    print('aluno Reprovado :(')
+  
+thiago = [5, 8, 3, 4]
+media = calculara_media(thiago)
+verificar_aprovacao(media)
+
+
+
+paulo = [3, 5, 7, 9]
+media = calculara_media(paulo)
+verificar_aprovacao(media)
+
+lucas = [5, 8, 4]
+media = calculara_media(lucas)
+verificar_aprovacao(media)
+
+def calculara_media(notas):
+  quantidade = len(notas)
+  soma = sum(notas)
+  media =  soma / quantidade
+  print('O aluno tirou', media)
+  verificar_aprovacao(media)
+
+def verificar_aprovacao(media):
+  if media >= 6:
+    print('Aluno Aprovado :)')
+  else:
+    print('aluno Reprovado :(')
+  
+thiago = [5, 8, 3, 4]
+calculara_media(thiago)
+
+
+
+# Calculo IMC
+
+def numero_quadrado(numero):
+  quadrado = numero * numero
+  return quadrado
+
+def imc(peso, altura):
+  altura_quadrada = numero_quadrado(altura)
+  meu_imc = peso / altura_quadrada
+  return meu_imc
+
+meu_imc = imc(90, 1.80)
+print(f'meu imc {meu_imc:.2f}')
+
+def imc(peso, altura):
+  altura_quadrada = altura ** 2 
+  meu_imc = peso / altura_quadrada
+  print(f'meu imc {meu_imc:.2f}')
+  return meu_imc
+
+meu_imc = imc(90, 1.80)
